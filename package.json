@@ -1,24 +1,27 @@
 {
-  "name": "ringfrenzy",
-  "version": "1.0.0",
-  "main": "index.ts",
-  "scripts": {
-    "start": "expo start",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web",
-    "prebuild": "expo prebuild --clean"
-  },
-  "dependencies": {
-    "expo": "~52.0.3",
-    "expo-status-bar": "~2.0.0",
-    "react": "18.3.1",
-    "react-native": "0.76.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@types/react": "~18.3.12",
-    "typescript": "^5.3.3"
-  },
-  "private": true
+	"name": "ringfrenzy",
+	"version": "1.0.0",
+	"main": "index.ts",
+	"scripts": {
+		"start": "expo start",
+		"android": "expo run:android",
+		"ios": "expo run:ios",
+		"web": "expo start --web",
+		"prebuild": "expo prebuild --clean",
+		"check": "biome check src/",
+		"check:write": "biome check --write src/"
+	},
+	"dependencies": {
+		"expo": "~52.0.3",
+		"expo-status-bar": "~2.0.0",
+		"react": "18.3.1",
+		"react-native": "0.76.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.25.2",
+		"@biomejs/biome": "1.9.4",
+		"@types/react": "~18.3.12",
+		"typescript": "^5.3.3"
+	},
+	"private": true
 }
