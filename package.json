@@ -8,8 +8,8 @@
 		"ios": "expo run:ios",
 		"web": "expo start --web",
 		"prebuild": "expo prebuild --clean",
-		"check": "biome check src/",
-		"check:write": "biome check --write src/"
+		"check": "biome check",
+		"check:write": "biome check --write"
 	},
 	"dependencies": {
 		"expo": "~52.0.3",
