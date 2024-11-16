@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 
-const Page = () => {
+const Index = () => {
     return (
         <View style={styles.container}>
-            <Text>Index Route</Text>
+            <Text>Root Layout</Text>
         </View>
     );
 };
@@ -16,4 +16,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Page;
+export default Index;
