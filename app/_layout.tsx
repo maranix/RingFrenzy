@@ -1,14 +1,11 @@
-import { Stack } from "expo-router";
-import { StatusBar } from "expo-status-bar";
+import { Slot } from "expo-router";
+import { ThemeContextProvider } from "../providers/ThemeContext";
 
 const RootLayout = () => {
     return (
-        <>
-            <Stack>
-                <Stack.Screen name="index" />
-            </Stack>
-            <StatusBar animated />
-        </>
+        <ThemeContextProvider>
+            <Slot />
+        </ThemeContextProvider>
     );
 };
 
