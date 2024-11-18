@@ -2,11 +2,12 @@ import { Appearance } from "react-native";
 import {
     createThemeFromVariant,
     getThemeVariantFromColorScheme,
+    type Theme,
     type ThemeVariant,
 } from "../constants/theme";
 import { useCallback, useEffect, useState } from "react";
 
-const useTheme = () => {
+const useTheme = (): Theme => {
     const [themeVariant, setThemeVariant] = useState<ThemeVariant>("light");
 
     const toggleTheme = useCallback(() => {

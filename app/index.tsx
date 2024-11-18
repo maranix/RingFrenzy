@@ -1,7 +1,7 @@
 import { View, StyleSheet, Text, Button } from "react-native";
 import { useThemeContext } from "../providers/ThemeContext";
 
-const Index = () => {
+const Index: React.FC = () => {
     const theme = useThemeContext();
 
     const styles = StyleSheet.create({
